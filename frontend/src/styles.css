@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+.nota-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nota-form input,
+.nota-form textarea,
+.nota-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.nota-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nota-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la lista de notas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botones dentro de la nota */
+li button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+li button:nth-child(2) { /* Botón de editar */
+  background-color: #f7c948;
+}
+
+li button:nth-child(3) { /* Botón de archivar */
+  background-color: #4caf50;
+}
+
+li button:hover {
+  opacity: 0.8;
+}
+
+/* Estilos para etiquetas */
+.etiqueta {
+  background: #007bff;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-right: 5px;
+}
